@@ -17,5 +17,27 @@
 }
 
 .logo-name {
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.link-tree {
+  height: 100%;
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.link-tree a {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-tree a:hover {
+  background-color: white;
+  color: hsl(300, 100%, 3%);
 }

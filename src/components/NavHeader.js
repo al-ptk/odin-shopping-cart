@@ -6,7 +6,7 @@ export default function NavHeader(props) {
       <a className='logo-name' href="/">
         Online Shop
       </a>
-      <nav>
+      <nav className='link-tree'>
         <a href="/">
           <li>Home</li>
         </a>
