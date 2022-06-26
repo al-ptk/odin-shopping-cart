@@ -1,0 +1,21 @@
+.NavHeader {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+
+  background-color: hsl(300, 100%, 3%);
+}
+
+.NavHeader a {
+  font-family: 'Inter';
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.logo-name {
+  font-weight: 700;
+}
