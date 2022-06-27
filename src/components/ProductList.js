@@ -1,3 +1,5 @@
+import './ProductList.css'
+
 export default function ProductList(props) {
-  return <div id="ProductList"></div>;
+  return <div className="ProductList"></div>;
 }
