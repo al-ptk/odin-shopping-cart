@@ -3,9 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 0 20px;
-
   background-color: hsl(300, 100%, 3%);
 }
 
@@ -26,18 +24,25 @@
   margin-right: 80px;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 
-.link-tree a {
+.link-tree .nav-link {
   height: 100%;
-  width: 100px;
+  width: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.link-tree a:hover {
+.link-tree .nav-link:hover {
   background-color: white;
   color: hsl(300, 100%, 3%);
+}
+
+.cart-logo {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
