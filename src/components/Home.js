@@ -2,6 +2,7 @@ import Carousel from './Carousel';
 import DisplayCard from './DisplayCard';
 import './Home.css';
 export default function Home(props) {
+  const {count, setCount} = props.counter;
   return (
     <div className="Home">
       <div className="purple-background"></div>
@@ -16,6 +17,7 @@ export default function Home(props) {
         <Carousel />
       </div>
       <a className='shop-button' href='/products'>Shop</a>
+      <button onClick={() => setCount(i => i + 1)}>{count}</button>
       <hr style={{ width: '70%' }} />
       <div className="product-display">
         {createDisplayCardProps(3).map((prop, index) => (

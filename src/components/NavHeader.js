@@ -1,20 +1,21 @@
 import './NavHeader.css';
 import cartLogo from '../images/icons/cart.svg';
+import { Link } from 'react-router-dom';
 
 export default function NavHeader(props) {
   return (
     <header className="NavHeader">
-      <a className="logo-name" href="/">
+      <Link className="logo-name" to="/">
         Online Shop
-      </a>
+      </Link>
       <nav className="link-tree">
-        <a className="nav-link" href="/">
+        <Link className="nav-link" to="/">
           <li>Home</li>
-        </a>
-        <a className="nav-link" href="/products">
+        </Link>
+        <Link className="nav-link" to="/products">
           <li>Products</li>
-        </a>
-        <a className="cart-logo" href="/cart">
+        </Link>
+        <Link className="cart-logo" to="/cart">
           <img
             style={{
               width: '70%',
@@ -24,7 +25,7 @@ export default function NavHeader(props) {
             alt="Cart icon"
             src={cartLogo}
           />
-        </a>
+        </Link>
       </nav>
     </header>
   );
