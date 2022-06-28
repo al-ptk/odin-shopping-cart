@@ -1,4 +1,5 @@
 .NavHeader {
+  flex: 0 0 auto;
   height: 72px;
   display: flex;
   justify-content: space-between;
