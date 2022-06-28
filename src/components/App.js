@@ -11,11 +11,20 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavHeader />
         <Routes>
-          <Route path={'/'} element={<Home counter={{ count, setCount }} />} />
-          <Route path={'/products'} element={<ProductList />} />
-          <Route path={'/cart'} element={<Cart />} />
+          <Route path="/" element={<NavHeader />}>
+            <Route index element={<Home />} />
+            <Route path="product-list" element={<ProductList />} />
+            <Route path="cart" element={<Cart />} />
+            <Route
+              path="*"
+              element={
+                <div>
+                  <h1>404 — Not Found</h1>
+                </div>
+              }
+            />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -61,6 +61,12 @@
   padding: 50px;
 }
 
+.display-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer {
   display: flex;
   justify-content: center;
