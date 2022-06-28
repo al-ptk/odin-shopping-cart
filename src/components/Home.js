@@ -17,7 +17,7 @@ export default function Home(props) {
         </div>
         <Carousel />
       </div>
-      <a className="shop-button" href="/products">
+      <a className="shop-button" href="/product-list">
         Shop
       </a>
       <hr style={{ width: '70%' }} />
